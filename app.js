@@ -47,7 +47,7 @@ async function wikiApiCall(searchInput) {
         }
 
     data.forEach(el => {
-        const url = `https://en.wikipeda.org/?curid=${el.pageid}`
+        const url = `https://en.wikipedia.org/?curid=${el.pageid}`
         const card = document.createElement("div");
         card.className = "result-item";
         card.innerHTML = `
